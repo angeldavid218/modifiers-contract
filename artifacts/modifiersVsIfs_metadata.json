@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "newMessage",
+						"type": "string"
+					}
+				],
+				"name": "updateMessage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"modifers-vs-ifs.sol": "modifiersVsIfs"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"modifers-vs-ifs.sol": {
+			"keccak256": "0xd9360f736dab7ad1c8243c3ebcd2b3d3901a07d03bc6f985d7e418f47b7344df",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ee3982d9a89141498147a7905247ed79a804e941566f0a0791aae7d2d6e486a0",
+				"dweb:/ipfs/QmaQQUUqpLZGKzm5UnD3U6E9HSS55oE9LDCpxKQyiGcSmB"
+			]
+		}
+	},
+	"version": 1
+}
