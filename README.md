@@ -9,28 +9,30 @@ This project includes two simple contracts that both restrict who can update a s
 
 ## Contracts
 
-1) ContractModifiersExample
+1. ContractModifiersExample
+
 - Stores the deployer as `owner` and a `message` string
 - Uses the `isOwner` modifier to guard `updateMessage`
 
-2) ContractExample
+2. ContractExample
+
 - Stores the deployer as `owner` and a `message` string
 - Uses an inline check inside `updateMessage` to revert when `msg.sender` is not the owner
 
 ## Project Layout
 
-- modifers-vs-ifs.sol — source file with both example contracts
+- modifiers-vs-ifs.sol — source file with both example contracts
 - artifacts/ — compiled JSON artifacts (ABI and metadata)
 
 Note: There is no Hardhat/Foundry configuration in this folder; this project is set up to be quickly explored with Remix.
 
 ## Quick Start (Remix IDE)
 
-1) Open https://remix.ethereum.org in your browser.
-2) Create a new file in Remix named `modifers-vs-ifs.sol` and paste the contents of this repository’s file.
-3) Make sure the compiler version is compatible with the pragma in the file (e.g., 0.8.20 fits `>0.8.15 <0.9.0`).
-4) Compile the contract.
-5) In the Deploy & Run tab:
+1. Open https://remix.ethereum.org in your browser.
+2. Create a new file in Remix named `modifiers-vs-ifs.sol` and paste the contents of this repository’s file.
+3. Make sure the compiler version is compatible with the pragma in the file (e.g., 0.8.20 fits `>0.8.15 <0.9.0`).
+4. Compile the contract.
+5. In the Deploy & Run tab:
    - Select `ContractModifiersExample` and deploy. The deployer account becomes `owner`.
    - Call `updateMessage("Hello")`. It should succeed for the owner account and revert for others.
    - Repeat with `ContractExample` and try `updateMessage` from the owner and a non-owner account to observe the difference.
